@@ -8,5 +8,8 @@ class City extends Model
 {
     public $timestamps = false;
 
-
+    public function restaurants(): HasMany
+    {
+        return $this->hasMany(Restaurant::class);
+    }
 }
