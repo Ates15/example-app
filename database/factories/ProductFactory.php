@@ -27,7 +27,7 @@ class ProductFactory extends Factory
             'category_id' => $category->id,
             'name' => fake()->name(),
             'description' => fake()->paragraph(fake()->numberBetween(4, 6)),
-            'price' => fake()->numberBetween(9, 99),
+            'price' => fake()->numberBetween(9, 299)
         ];
     }
 }

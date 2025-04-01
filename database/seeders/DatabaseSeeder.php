@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Product;
+use App\Models\Reservation;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -35,6 +36,10 @@ class DatabaseSeeder extends Seeder
 
         Product::factory()
             ->count(100)
+            ->create();
+
+        Reservation::factory()
+            ->count(50)
             ->create();
     }
 }
